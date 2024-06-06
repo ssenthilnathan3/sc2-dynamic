@@ -6,9 +6,6 @@ import {
   initializeDatabase,
   insertAllData,
   createNewTable,
-  addNewColumn,
-  updateEnableUi,
-  deleteColumn,
   checkIfDataExistsOnTable,
 } from "./parser/db.js";
 
@@ -23,7 +20,11 @@ app.get("/", (req, res) => {
 app.get("/parseExcelToJSON", (req, res) => {
   var arr = parseFile("parser/feat_list.xlsx");
   fs.writeFileSync("parser/feat_list.json", JSON.stringify(arr));
-  res.send(arr);
+  res.status(200).send({
+    "status-code": 200,
+    "message": "data parsed successfully",
+    "data": arr
+});
 });
 
 app.get("/get", async (req, res) => {

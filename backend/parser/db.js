@@ -53,13 +53,6 @@ const insertAllData = async (table_name, data) => {
   console.log("✅ Data Inserted!!");
 };
 
-const addNewRowifNotExists = async (table_name, data) => {
-  const exist = await checkIfDataExistsOnTable(table_name);
-  if (!exist) {
-    await insertAllData(table_name, data);
-  }
-}
-
 
 const updateEnableUi = async (id, val) => {
   await knexClient("intakeqa").where({ id: id }).update({
@@ -78,7 +71,6 @@ const deleteColumn = async (id) => {
 export {
   initializeDatabase,
   createNewTable,
-  addNewColumn,
   updateEnableUi,
   deleteColumn,
   insertAllData,
