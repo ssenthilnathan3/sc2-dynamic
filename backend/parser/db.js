@@ -41,7 +41,7 @@ const checkIfRowExists = async (table_name, id) => {
 
 const createNewTable = async (table_name, schema_arr) => {
   await knexClient.schema.createTableIfNotExists(table_name, (table) => {
-    Object.keys(schema_arr[0]).forEach((key) => {
+    Object.keys(schema_arr).forEach((key) => {
       table.string(key, 255);
     });
   });
@@ -67,6 +67,7 @@ const deleteColumn = async (id) => {
   });
   console.log("✅ Column Deleted!!");
 };
+
 
 export {
   initializeDatabase,

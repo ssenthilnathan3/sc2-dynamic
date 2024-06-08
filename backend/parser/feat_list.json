@@ -1,1 +1,1012 @@
-[{"id":1,"label_name":"Vendor","field_type_w":"Dropdown","field_type_m":"Dropdown","associated_column_name":"Vendor","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"dropdown","label":"Vendor","list_options":"","required":"Yes"}},{"id":2,"label_name":"Grower","field_type_w":"Dropdown","field_type_m":"Dropdown","associated_column_name":"Grower","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"dropdown","label":"Grower","list_options":"","required":"Yes"}},{"id":3,"label_name":"Field","field_type_w":"Dropdown","field_type_m":"Dropdown","associated_column_name":"Field","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"dropdown","label":"Field","list_options":"","required":"Yes"}},{"id":4,"label_name":"Variety","field_type_w":"Dropdown","field_type_m":"Dropdown","associated_column_name":"Variety","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"dropdown","label":"Variety","list_options":"","required":"Yes"}},{"id":5,"label_name":"Crop group","field_type_w":"Dropdown","field_type_m":"Input Box","associated_column_name":"CropGroup","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"Crop group","required":"Yes"}},{"id":6,"label_name":"PO Number","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"PONumber","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"PO Number","required":"Yes"}},{"id":7,"label_name":"LOD Number","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"LODNumber","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"LOD Number","required":"Yes"}},{"id":8,"label_name":"Branston site","field_type_w":"Dropdown","field_type_m":"Dropdown","associated_column_name":"BranstonSite","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"dropdown","label":"Branston site","list_options":"","required":"Yes"}},{"id":9,"label_name":"LOD Passport","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"LODPassport","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"LOD Passport","required":"Yes"}},{"id":10,"label_name":"Controlled Load","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"ControlledLoad","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Controlled Load","buttons":"Yes/No","required":"Yes"}},{"id":11,"label_name":"Intended Use (Customer Level)","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"IntendedUse(CustomerLevel)","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"1,2,3","min":"","max":"","ui_type":{"type":"button","label":"Intended Use (Customer Level)","buttons":"1,2,3","required":"Yes"}},{"id":12,"label_name":"Intake assessment date","field_type_w":"Input Box (Non Editable)","field_type_m":"Input Box (Non Editable)","associated_column_name":"IntakeAssessmentDate","column_type":"smalldatetime","required":"Yes","enable_ui":1,"list_options":"","min":"","max":""},{"id":13,"label_name":"Tuber temperature at sampling (degrees C)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"TuberTemperatureAtSampling","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":30,"ui_type":{"type":"textfield","label":"Tuber temperature at sampling (degrees C)","required":"Yes"}},{"id":14,"label_name":"Dry matter %","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"DryMatter","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":10,"max":30,"ui_type":{"type":"textfield","label":"Dry matter %","required":"Yes"}},{"id":15,"label_name":"Marketable weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"MarketableWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Marketable weight (kg)","required":"Yes"}},{"id":16,"label_name":"Brightness","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Brightness","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Dull, Poor, Bright, Very Bright","min":"","max":"","ui_type":{"type":"button","label":"Brightness","buttons":"Dull, Poor, Bright, Very Bright","required":"Yes"}},{"id":17,"label_name":"Soil Adhesion","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"SoilAdhesion","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Soil Adhesion","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":18,"label_name":"Sprouting","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Sprouting","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Sprouting","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":19,"label_name":"Common Scab","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"CommonScab","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Common Scab","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":20,"label_name":"Powdery Scab","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"PowderyScab","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Powdery Scab","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":21,"label_name":"Black Dot","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"BlackDot","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Black Dot","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":22,"label_name":"Black Scurf","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"BlackScurf","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Black Scurf","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":23,"label_name":"Lenticels","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Lenticels","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Lenticels","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":24,"label_name":"Netting","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Netting","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Netting","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":25,"label_name":"Silver Scurf","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"SilverScurf","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Silver Scurf","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":26,"label_name":"Skin Spot","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"SkinSpot","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Skin Spot","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":27,"label_name":"Scuffing","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Scuffing","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Absent, Low, Medium, High","min":"","max":"","ui_type":{"type":"button","label":"Scuffing","buttons":"Absent, Low, Medium, High","required":"Yes"}},{"id":28,"label_name":"Sample Photo","field_type_w":"Camera","field_type_m":"Camera","associated_column_name":"","column_type":"","required":"Yes","enable_ui":1,"list_options":"","min":"","max":""},{"id":29,"label_name":"Rots weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RotsWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Rots weight (kg)","required":"Yes"}},{"id":30,"label_name":"Bacterial Rot","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"BacterialRot","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Bacterial Rot","buttons":"Yes/No","required":"Yes"}},{"id":31,"label_name":"Dry Rot","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"DryRot","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Dry Rot","buttons":"Yes/No","required":"Yes"}},{"id":32,"label_name":"Gangrene","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Gangrene","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Gangrene","buttons":"Yes/No","required":"Yes"}},{"id":33,"label_name":"Blight","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Blight","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Blight","buttons":"Yes/No","required":"Yes"}},{"id":34,"label_name":"Pest weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"PestWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":0,"max":25,"ui_type":{"type":"textfield","label":"Pest weight (kg)","required":"Yes"}},{"id":35,"label_name":"Slug","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Slug","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"button","label":"Slug","buttons":"","required":"Yes"}},{"id":36,"label_name":"Wire worm","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"WireWorm","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"button","label":"Wire worm","buttons":"","required":"Yes"}},{"id":37,"label_name":"External damage and visible bruising weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"DamageWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"External damage and visible bruising weight (kg)","required":"Yes"}},{"id":38,"label_name":"Green weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"GreenWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Green weight (kg)","required":"Yes"}},{"id":39,"label_name":"Misshape and growth crack weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"MisshapeWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Misshape and growth crack weight (kg)","required":"Yes"}},{"id":40,"label_name":"Sprouting weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"SproutingWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Sprouting weight (kg)","required":"Yes"}},{"id":41,"label_name":"Skin finish level 1 weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"SkinFinishLevel1Weight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"Skin finish level 1 weight (kg)","required":"Yes"}},{"id":42,"label_name":"Skin finish level 2 weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"SkinFinishLevel2Weight","column_type":"","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"Skin finish level 2 weight (kg)","required":"Yes"}},{"id":43,"label_name":"Skin finish level 3 weight (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"SkinFinishLevel3Weight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Skin finish level 3 weight (kg)","required":"Yes"}},{"id":44,"label_name":"Sub sample weight","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"SubSampleWeight","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Sub sample weight","required":"Yes"}},{"id":45,"label_name":"Remains after 1 peel (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter1Peel(kg)","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Remains after 1 peel (kg)","required":"Yes"}},{"id":46,"label_name":"Remains after 2 peels (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter2Peels(kg)","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Remains after 2 peels (kg)","required":"Yes"}},{"id":47,"label_name":"Remains after 3 peels (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter3Peels(kg)","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Remains after 3 peels (kg)","required":"Yes"}},{"id":48,"label_name":"Remains after 4 peels (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter4Peels(kg)","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Remains after 4 peels (kg)","required":"Yes"}},{"id":49,"label_name":"Remains after 5 peel (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter5Peels(kg)","column_type":"decimal(9,2)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":25,"ui_type":{"type":"textfield","label":"Remains after 5 peel (kg)","required":"Yes"}},{"id":50,"label_name":"Remains after 6 peels (kg)","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"RemainsAfter6Peels(%)","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"Remains after 6 peels (kg)","required":"Yes"}},{"id":51,"label_name":"Internal defect: No tubers affected","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"TubersAffectedByInternalDefects","column_type":"int","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":100,"ui_type":{"type":"textfield","label":"Internal defect: No tubers affected","required":"Yes"}},{"id":52,"label_name":"Internal defects","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"InternalDefect","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Spraing, Hollow Heart, Black Heart, Internal Rust","min":0,"max":255,"ui_type":{"type":"button","label":"Internal defects","buttons":"Spraing, Hollow Heart, Black Heart, Internal Rust","required":"Yes"}},{"id":53,"label_name":"Comments","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"Comments","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":"","max":"","ui_type":{"type":"textfield","label":"Comments","required":"Yes"}},{"id":54,"label_name":"Publish to the Growers Portal","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"Publish","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Publish to the Growers Portal","buttons":"Yes/No","required":"Yes"}},{"id":55,"label_name":"Email required","field_type_w":"Dropdown","field_type_m":"Button","associated_column_name":"EmailRequired","column_type":"bit","required":"Yes","enable_ui":1,"list_options":"Yes/No","min":"","max":"","ui_type":{"type":"button","label":"Email required","buttons":"Yes/No","required":"Yes"}},{"id":56,"label_name":"Email address","field_type_w":"Input Box","field_type_m":"Input Box","associated_column_name":"EmailAddress","column_type":"varchar(255)","required":"Yes","enable_ui":1,"list_options":"","min":0,"max":255,"ui_type":{"type":"textfield","label":"Email address","required":"Yes"}}]
+[
+  {
+    "id": 1,
+    "label_name": "Vendor",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Dropdown",
+    "associated_column_name": "Vendor",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "dropdown",
+      "label": "Vendor",
+      "list_options": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 2,
+    "label_name": "Grower",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Dropdown",
+    "associated_column_name": "Grower",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "dropdown",
+      "label": "Grower",
+      "list_options": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 3,
+    "label_name": "Field",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Dropdown",
+    "associated_column_name": "Field",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "dropdown",
+      "label": "Field",
+      "list_options": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 4,
+    "label_name": "Variety",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Dropdown",
+    "associated_column_name": "Variety",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "dropdown",
+      "label": "Variety",
+      "list_options": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 5,
+    "label_name": "Crop group",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Input Box",
+    "associated_column_name": "CropGroup",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": { "type": "textfield", "label": "Crop group", "required": "Yes" }
+  },
+  {
+    "id": 6,
+    "label_name": "PO Number",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "PONumber",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": { "type": "textfield", "label": "PO Number", "required": "Yes" }
+  },
+  {
+    "id": 7,
+    "label_name": "LOD Number",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "LODNumber",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": { "type": "textfield", "label": "LOD Number", "required": "Yes" }
+  },
+  {
+    "id": 8,
+    "label_name": "Branston site",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Dropdown",
+    "associated_column_name": "BranstonSite",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "dropdown",
+      "label": "Branston site",
+      "list_options": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 9,
+    "label_name": "LOD Passport",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "LODPassport",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "textfield",
+      "label": "LOD Passport",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 10,
+    "label_name": "Controlled Load",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "ControlledLoad",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Controlled Load",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 11,
+    "label_name": "Intended Use (Customer Level)",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "IntendedUse(CustomerLevel)",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "1,2,3",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Intended Use (Customer Level)",
+      "buttons": "1,2,3",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 12,
+    "label_name": "Intake assessment date",
+    "field_type_w": "Input Box (Non Editable)",
+    "field_type_m": "Input Box (Non Editable)",
+    "associated_column_name": "IntakeAssessmentDate",
+    "column_type": "smalldatetime",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": ""
+  },
+  {
+    "id": 13,
+    "label_name": "Tuber temperature at sampling (degrees C)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "TuberTemperatureAtSampling",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 30,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Tuber temperature at sampling (degrees C)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 14,
+    "label_name": "Dry matter %",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "DryMatter",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 10,
+    "max": 30,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Dry matter %",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 15,
+    "label_name": "Marketable weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "MarketableWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Marketable weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 16,
+    "label_name": "Brightness",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Brightness",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Dull, Poor, Bright, Very Bright",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Brightness",
+      "buttons": "Dull, Poor, Bright, Very Bright",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 17,
+    "label_name": "Soil Adhesion",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "SoilAdhesion",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Soil Adhesion",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 18,
+    "label_name": "Sprouting",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Sprouting",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Sprouting",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 19,
+    "label_name": "Common Scab",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "CommonScab",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Common Scab",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 20,
+    "label_name": "Powdery Scab",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "PowderyScab",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Powdery Scab",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 21,
+    "label_name": "Black Dot",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "BlackDot",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Black Dot",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 22,
+    "label_name": "Black Scurf",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "BlackScurf",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Black Scurf",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 23,
+    "label_name": "Lenticels",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Lenticels",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Lenticels",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 24,
+    "label_name": "Netting",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Netting",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Netting",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 25,
+    "label_name": "Silver Scurf",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "SilverScurf",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Silver Scurf",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 26,
+    "label_name": "Skin Spot",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "SkinSpot",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Skin Spot",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 27,
+    "label_name": "Scuffing",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Scuffing",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Absent, Low, Medium, High",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Scuffing",
+      "buttons": "Absent, Low, Medium, High",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 28,
+    "label_name": "Sample Photo",
+    "field_type_w": "Camera",
+    "field_type_m": "Camera",
+    "associated_column_name": "",
+    "column_type": "",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": ""
+  },
+  {
+    "id": 29,
+    "label_name": "Rots weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RotsWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Rots weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 30,
+    "label_name": "Bacterial Rot",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "BacterialRot",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Bacterial Rot",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 31,
+    "label_name": "Dry Rot",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "DryRot",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Dry Rot",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 32,
+    "label_name": "Gangrene",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Gangrene",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Gangrene",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 33,
+    "label_name": "Blight",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Blight",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Blight",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 34,
+    "label_name": "Pest weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "PestWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Pest weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 35,
+    "label_name": "Slug",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Slug",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Slug",
+      "buttons": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 36,
+    "label_name": "Wire worm",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "WireWorm",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Wire worm",
+      "buttons": "",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 37,
+    "label_name": "External damage and visible bruising weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "DamageWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "External damage and visible bruising weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 38,
+    "label_name": "Green weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "GreenWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Green weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 39,
+    "label_name": "Misshape and growth crack weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "MisshapeWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Misshape and growth crack weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 40,
+    "label_name": "Sprouting weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "SproutingWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Sprouting weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 41,
+    "label_name": "Skin finish level 1 weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "SkinFinishLevel1Weight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "textfield",
+      "label": "Skin finish level 1 weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 42,
+    "label_name": "Skin finish level 2 weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "SkinFinishLevel2Weight",
+    "column_type": "",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "textfield",
+      "label": "Skin finish level 2 weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 43,
+    "label_name": "Skin finish level 3 weight (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "SkinFinishLevel3Weight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Skin finish level 3 weight (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 44,
+    "label_name": "Sub sample weight",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "SubSampleWeight",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Sub sample weight",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 45,
+    "label_name": "Remains after 1 peel (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter1Peel(kg)",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 1 peel (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 46,
+    "label_name": "Remains after 2 peels (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter2Peels(kg)",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 2 peels (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 47,
+    "label_name": "Remains after 3 peels (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter3Peels(kg)",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 3 peels (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 48,
+    "label_name": "Remains after 4 peels (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter4Peels(kg)",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 4 peels (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 49,
+    "label_name": "Remains after 5 peel (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter5Peels(kg)",
+    "column_type": "decimal(9,2)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 25,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 5 peel (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 50,
+    "label_name": "Remains after 6 peels (kg)",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "RemainsAfter6Peels(%)",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "textfield",
+      "label": "Remains after 6 peels (kg)",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 51,
+    "label_name": "Internal defect: No tubers affected",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "TubersAffectedByInternalDefects",
+    "column_type": "int",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 100,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Internal defect: No tubers affected",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 52,
+    "label_name": "Internal defects",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "InternalDefect",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Spraing, Hollow Heart, Black Heart, Internal Rust",
+    "min": 0,
+    "max": 255,
+    "ui_type": {
+      "type": "button",
+      "label": "Internal defects",
+      "buttons": "Spraing, Hollow Heart, Black Heart, Internal Rust",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 53,
+    "label_name": "Comments",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "Comments",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": "",
+    "max": "",
+    "ui_type": { "type": "textfield", "label": "Comments", "required": "Yes" }
+  },
+  {
+    "id": 54,
+    "label_name": "Publish to the Growers Portal",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "Publish",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Publish to the Growers Portal",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 55,
+    "label_name": "Email required",
+    "field_type_w": "Dropdown",
+    "field_type_m": "Button",
+    "associated_column_name": "EmailRequired",
+    "column_type": "bit",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "Yes/No",
+    "min": "",
+    "max": "",
+    "ui_type": {
+      "type": "button",
+      "label": "Email required",
+      "buttons": "Yes/No",
+      "required": "Yes"
+    }
+  },
+  {
+    "id": 56,
+    "label_name": "Email address",
+    "field_type_w": "Input Box",
+    "field_type_m": "Input Box",
+    "associated_column_name": "EmailAddress",
+    "column_type": "varchar(255)",
+    "required": "Yes",
+    "enable_ui": 1,
+    "list_options": "",
+    "min": 0,
+    "max": 255,
+    "ui_type": {
+      "type": "textfield",
+      "label": "Email address",
+      "required": "Yes"
+    }
+  }
+]

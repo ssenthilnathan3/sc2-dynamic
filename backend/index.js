@@ -17,19 +17,21 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/parseExcelToJSON", (req, res) => {
-  var arr = parseFile("parser/feat_list.xlsx");
-  fs.writeFileSync("parser/feat_list.json", JSON.stringify(arr));
+app.get("/parseExcelToJSON/:filename", (req, res) => {
+  const { filename } = req.params;
+  var arr = parseFile(`parser/${filename}.xlsx`);
+  fs.writeFileSync(`parser/${filename}.json`, JSON.stringify(arr));
   res.status(200).send({
     "status-code": 200,
-    "message": "data parsed successfully",
-    "data": arr
-});
+    message: "data parsed successfully",
+    data: arr,
+  });
 });
 
-app.get("/get", async (req, res) => {
+app.get("/get/:tablename", async (req, res) => {
+  const { tablename } = req.params;
   try {
-    const data = await knexClient("intakeqa").select("*");
+    const data = await knexClient(tableName).select("*");
     res.send(data);
   } catch (err) {
     console.error("❌ Error fetching data:", err);
@@ -37,9 +39,10 @@ app.get("/get", async (req, res) => {
   }
 });
 
-app.get("/createTableFromJson", async (req, res) => {
+app.get("/createTableFromJson/:name", async (req, res) => {
+  const { name } = req.params;
   try {
-    fs.readFile("parser/feat_list.json", "utf8", async (error, data) => {
+    fs.readFile(`parser/${name}.json`, "utf8", async (error, data) => {
       if (error) {
         console.error("❌ Error reading JSON file:", error);
         res.status(500).send("An error occurred while reading the JSON file.");
@@ -49,7 +52,7 @@ app.get("/createTableFromJson", async (req, res) => {
       const arr_json = JSON.parse(data);
 
       try {
-        await createNewTable("intakeqa", arr_json);
+        await createNewTable(name, arr_json);
         res.status(200).send("Table created successfully.");
       } catch (err) {
         console.error("❌ Error creating table:", err);
@@ -62,9 +65,10 @@ app.get("/createTableFromJson", async (req, res) => {
   }
 });
 
-app.get("/insertIfNotExists", async (req, res) => {
+app.get("/insertIfNotExists/:tablename", async (req, res) => {
+  const { tablename } = req.params;
   try {
-    fs.readFile("parser/feat_list.json", "utf8", async (error, data) => {
+    fs.readFile(`parser/${tableName}.json`, "utf8", async (error, data) => {
       if (error) {
         console.error("❌ Error reading JSON file:", error);
         res.status(500).send("An error occurred while reading the JSON file.");
@@ -74,12 +78,12 @@ app.get("/insertIfNotExists", async (req, res) => {
       const arr_json = JSON.parse(data);
 
       try {
-        const exist = await checkIfDataExistsOnTable("intakeqa");
+        const exist = await checkIfDataExistsOnTable(tableName);
         if (exist) {
           res.status(200).send("Data already exists.");
           return;
         } else {
-          await insertAllData("intakeqa", arr_json);
+          await insertAllData(tableName, arr_json);
           res.status(200).send("Data inserted successfully.");
         }
       } catch (err) {
@@ -93,9 +97,10 @@ app.get("/insertIfNotExists", async (req, res) => {
   }
 });
 
-app.post("/addColumn", async (req, res) => {
+app.post("/addColumn/:tablename", async (req, res) => {
+  const { tablename } = req.params;
   try {
-    await knexClient.schema.table("intakeqa", (table) => {
+    await knexClient.schema.table(tablename, (table) => {
       req.body.obj.forEach((obj) => {
         table[obj.column_name](obj.column_type);
       });
@@ -107,9 +112,10 @@ app.post("/addColumn", async (req, res) => {
   }
 });
 
-app.put("/updateColumn", async (req, res) => {
+app.put("/updateColumn/:tablename", async (req, res) => {
+  const { tablename } = req.params;
   try {
-    await knexClient("intakeqa").where({ id: req.body.id }).update({
+    await knexClient(tablename).where({ id: req.body.id }).update({
       enable_ui: req.body.val,
     });
     res.send("Updated enable_ui!!");
@@ -119,15 +125,33 @@ app.put("/updateColumn", async (req, res) => {
   }
 });
 
-app.delete("/deleteColumn", async (req, res) => {
+app.delete("/deleteColumn/:tablename", async (req, res) => {
+  const { tablename } = req.params;
   try {
-    await knexClient.schema.table("intakeqa", (table) => {
+    await knexClient.schema.table(tablename, (table) => {
       table.dropColumn(req.body.id);
     });
     res.send("Column Deleted!!");
   } catch (err) {
     console.error("❌ Error deleting column:", err);
     res.status(500).send("An error occurred while deleting the column.");
+  }
+});
+
+app.post("/postFormData/:name", async (req, res) => {
+  const { name } = req.params;
+  const slug = name.toLowerCase().replace(/\s+/g, "-");
+  console.log(slug);
+  console.log(req.body);
+  // TODO: create schema from req.body keys
+  if (slug == "drymatter") {
+    try {
+      await createNewTable(slug, req.body);
+      await insertAllData(slug, req.body);
+      res.status(200).send("Data inserted successfully.");
+    } catch (e) {
+      console.log(e);
+    }
   }
 });
 
