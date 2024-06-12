@@ -3,11 +3,12 @@ import 'package:http/http.dart' as http;
 import 'package:sc2_dynamic_flutter/utils/prefs_handler.dart';
 
 class Http {
-  static String url = "http://192.168.23.123:3000";
+  static String ip = "192.168.23.123";
+  static String url = "http://$ip:3000";
 
   static Future<void> getData() async {
     try {
-      final res = await http.get(Uri.parse("$url/parseExcelToJSON"));
+      final res = await http.get(Uri.parse("$url/parseExcelToJSON/drymatter"));
       // print("Response status: ${res.statusCode}");
       // print("Raw response body: ${res.body}");
 
@@ -40,8 +41,8 @@ class Http {
 
       final res = await http.post(uri, headers: headers, body: body);
 
-      print('Response status: ${res.statusCode}');
-      print('Response body: ${res.body}');
+      // print('Response status: ${res.statusCode}');
+      // print('Response body: ${res.body}');
 
       if (res.statusCode == 200) {
         result = 'Form Created Successfully';

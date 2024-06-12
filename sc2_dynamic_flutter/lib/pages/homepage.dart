@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     try {
-      var result = await Http.postData(formData, "drymatter");
+      var result = await Http.postData(formData, "drymatterresult");
       print(result);
     } catch (e) {
       print('Error: $e');
@@ -99,15 +99,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('Dry Matter Assessment'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: _fields.length,
-          itemBuilder: (context, index) {
-            return buildFormField(_fields[index]);
-          },
-        ),
-      ),
+      body: _isLoading
+          ? CircularProgressIndicator()
+          : Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: ListView.builder(
+                itemCount: _fields.length,
+                itemBuilder: (context, index) {
+                  return buildFormField(_fields[index]);
+                },
+              ),
+            ),
     );
   }
 }
