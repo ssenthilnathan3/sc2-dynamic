@@ -40,10 +40,19 @@ const checkIfRowExists = async (table_name, id) => {
 };
 
 const createNewTable = async (table_name, schema_arr) => {
+  console.log(schema_arr);
+  const totalProps =
+    schema_arr.length > 0
+      ? schema_arr.reduce((a, obj) => a + Object.keys(obj).length, 0)
+      : 0;
   await knexClient.schema.createTableIfNotExists(table_name, (table) => {
-    Object.keys(schema_arr).forEach((key) => {
-      table.string(key, 255);
-    });
+    totalProps > 1
+      ? Object.keys(schema_arr[0]).forEach((value) => {
+          table.string(value, 255);
+        })
+      : Object.keys(schema_arr).forEach((value) => {
+          table.string(value, 255);
+        });
   });
   console.log("✅ Table Created!!");
 };
@@ -52,7 +61,6 @@ const insertAllData = async (table_name, data) => {
   await knexClient(table_name).insert(data);
   console.log("✅ Data Inserted!!");
 };
-
 
 const updateEnableUi = async (id, val) => {
   await knexClient("intakeqa").where({ id: id }).update({
@@ -68,7 +76,6 @@ const deleteColumn = async (id) => {
   console.log("✅ Column Deleted!!");
 };
 
-
 export {
   initializeDatabase,
   createNewTable,
@@ -76,5 +83,5 @@ export {
   deleteColumn,
   insertAllData,
   checkIfDataExistsOnTable,
-  checkIfRowExists
+  checkIfRowExists,
 };

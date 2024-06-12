@@ -17,6 +17,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+
+// Converts excel file to json based on the file name!
 app.get("/parseExcelToJSON/:filename", (req, res) => {
   const { filename } = req.params;
   var arr = parseFile(`parser/${filename}.xlsx`);
@@ -31,7 +33,7 @@ app.get("/parseExcelToJSON/:filename", (req, res) => {
 app.get("/get/:tablename", async (req, res) => {
   const { tablename } = req.params;
   try {
-    const data = await knexClient(tableName).select("*");
+    const data = await knexClient(tablename).select("*");
     res.send(data);
   } catch (err) {
     console.error("❌ Error fetching data:", err);
@@ -68,7 +70,7 @@ app.get("/createTableFromJson/:name", async (req, res) => {
 app.get("/insertIfNotExists/:tablename", async (req, res) => {
   const { tablename } = req.params;
   try {
-    fs.readFile(`parser/${tableName}.json`, "utf8", async (error, data) => {
+    fs.readFile(`parser/${tablename}.json`, "utf8", async (error, data) => {
       if (error) {
         console.error("❌ Error reading JSON file:", error);
         res.status(500).send("An error occurred while reading the JSON file.");
@@ -78,12 +80,12 @@ app.get("/insertIfNotExists/:tablename", async (req, res) => {
       const arr_json = JSON.parse(data);
 
       try {
-        const exist = await checkIfDataExistsOnTable(tableName);
+        const exist = await checkIfDataExistsOnTable(tablename);
         if (exist) {
           res.status(200).send("Data already exists.");
           return;
         } else {
-          await insertAllData(tableName, arr_json);
+          await insertAllData(tablename, arr_json);
           res.status(200).send("Data inserted successfully.");
         }
       } catch (err) {
@@ -144,7 +146,8 @@ app.post("/postFormData/:name", async (req, res) => {
   console.log(slug);
   console.log(req.body);
   // TODO: create schema from req.body keys
-  if (slug == "drymatter") {
+  
+  if (slug == "drymatterresult") {
     try {
       await createNewTable(slug, req.body);
       await insertAllData(slug, req.body);

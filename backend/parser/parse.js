@@ -3,6 +3,14 @@ import XLSX from "xlsx";
 import fs from "fs";
 import { format, join } from "path";
 
+function parseAllFiles(folderPath) {
+  const files = fs.readdirSync(folderPath);
+  files.forEach((file) => {
+    const arr = parseFile(join(folderPath, file));
+    fs.writeFileSync(join(folderPath, file.replace(".xlsx", ".json")), JSON.stringify(arr));
+  });
+}
+
 function parseFile(filePath) {
   const workbook = XLSX.readFile(filePath);
   const sheet = workbook.SheetNames[0];
